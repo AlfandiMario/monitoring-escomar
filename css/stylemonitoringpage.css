@@ -1,0 +1,150 @@
+.navbarmonitor{
+    padding-left: 20px;
+    background: linear-gradient(270deg, #007DBC 35.96%, #00A16A 93.44%);
+    border-radius: 27px;
+}
+.brand img{
+    width: 25%;
+    height:auto;
+}
+.controlswitchpanel{
+    padding-left: 5px;
+    padding-top: 5px;
+
+    background: #0E1726;
+    border-radius: 27px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+.controlswitchpanel2{
+    padding-left: 5px;
+    padding-top: 5px;
+    background: #0E1726;
+    border-radius: 27px;
+    padding-bottom: 21vh;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+.controlswitchpanel3{
+    padding-left: 5px;
+    padding-top: 5px;
+
+    background: #0E1726;
+    border-radius: 27px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.subjudul{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+
+    color: #FFFFFF;
+}
+.subsubjudul{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: #FFFFFF
+}
+.graphbar{
+    min-width: 245px;
+    background: #191E3A;
+    border-radius: 61px;
+}
+
+
+.textflexkanan{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+/* identical to box height */
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.powerflexkanan:focus{
+    padding-left: 4vw;
+    padding-right: 4vw;
+    background: #006CFF;
+    border-radius: 61px;
+}
+
+.voltflexkanan:focus{
+    padding-left: 4vw;
+    padding-right: 4vw;
+    background: #00AE86;
+    border-radius: 61px;
+}
+.powerflexkanan{
+    background-color: #006CFF;
+}
+.voltflexkanan{
+    background: #00AE86;
+}
+
+.dropdown{
+    background-color: transparent !important;
+    color: #fff !important;
+}
+.btn{
+    color: #fff;
+    background-color: transparent !important;
+    border: none !important;
+}
+.dropdown-menu{
+    background-color: #0E1726 !important;
+}
+.dropdown-item{
+    text-align: left !important;
+    font-style:'Poppins' ;
+}
+
+button{
+    padding-left: 4vw;
+    padding-right: 4vw;
+    background: #636363;
+    border-radius: 61px;  
+}
+@media only screen and (max-width: 450px) {
+    .navbarmonitor{
+        min-width: 0px;
+        max-width: auto;
+    }
+    .brand img{
+        min-height: 0px;
+        max-height: 100px;
+        width: 70px
+    }
+    .controlswitchpanel{
+        min-width:0px;
+        max-width:auto;
+    }
+    .controlswitchpanel2{
+        padding-bottom: 0px;
+    }
+    .controlswitchpanel3{
+        min-width: 300px;
+    }
+    .chart-container{
+        min-width: 300px;
+        
+    }
+    
+}

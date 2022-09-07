@@ -1,0 +1,90 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap");
+*{
+  text-align: center;
+  font-family: "Poppins"; sans-serif;
+}
+
+
+body {
+  /* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
+  background: linear-gradient(to right, #007dbc, #00a16a);
+  background: -webkit-linear-gradient(to right, #007dbc, #00a16a);  /* Chrome 10-25, Safari 5.1-6 */
+
+  background-size: auto;
+  /* animation: transitionIn 1.2s ease-out; */
+
+}
+/* Mengatur style header escomar */
+header{
+  margin-top: 2%;
+  color:rgb(230, 230, 230);
+  font-size: 250%;
+  font-weight: 700;
+  margin-bottom: 0%;
+}
+
+.navbar .navbar-brand{
+  color: #000000;
+  font-weight: 700;
+}
+.navbar .collapse .nav-link{
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+/* Mengatur Box Cards Scooter */
+.card{
+  /* warna card */
+  background-color: rgb(230, 230, 230);
+  /* color: aqua; warna huruf */
+  transition: transform 0.4s ease;
+  box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.1);
+  border-radius: 80;
+  border: 10;
+  margin-bottom: 5%;
+  animation: transitionIn 2s ease;
+}
+
+.card:hover{
+  transform: scale(1.1);
+  /* background-color: #52edb9; */
+}
+
+#avail:hover{
+  background-color: beige;
+}
+
+#coming:hover{
+  background-color: rgba(128, 128, 128, 0.5);
+  color: rgb(237, 108, 33);
+}
+
+.card .card-title{
+  font-weight: 600;
+}
+.card .card-text{
+  color:black;
+  font-weight: 600;
+  line-height: 100%;
+}
+.card .card-img{
+  width: 85%;
+  /* margin: 5%; */
+}
+
+.d-flex {
+  margin-bottom: 7%;
+}
+
+@keyframes transitionIn{
+  from{
+    opacity: 0;
+    transform: translateX(3em)
+      
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0)
+  }
+}
