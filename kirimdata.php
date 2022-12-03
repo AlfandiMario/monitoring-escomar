@@ -7,7 +7,6 @@ ini_set('date.timezone', 'Asia/Jakarta');
 $now = new DateTime();
 
 $datenow = $now->format("Y-m-d H:i:s");
-var_dump($_SERVER["REQUEST_METHOD"]);
 
 //Ngambil data dari web
 $rfid = $_POST['rfid'];

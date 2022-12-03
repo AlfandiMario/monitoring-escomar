@@ -12,11 +12,6 @@ var_dump($_SERVER["REQUEST_METHOD"]);
 //Ngambil data dari web
 $tracking = $_POST['tracking'];
 
-
-//Masukin data ke MySQL
-// $sql = "INSERT INTO tracking1 VALUES ('','$tracking')";
-
-// Cara 2 :
 // Update data lokasi biar kolomnya hanya ada 1
 $sql = "UPDATE tracking1 SET tracking = '$tracking' WHERE id = 1";
 

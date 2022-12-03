@@ -5,6 +5,16 @@ if (!isset($_SESSION["login"])) {
   header("Location: login.php");
   exit;
 }
+$konek = mysqli_connect("localhost", "root", "", "baskarae_db");
+$sql = mysqli_query($konek, "SELECT * from monitoring1 order by id desc");
+$data = mysqli_fetch_array($sql);
+$rfid = $data['rfid'];
+$rfid1 = (int)$rfid;
+
+$pencocokan = mysqli_query($konek, "SELECT * FROM userdata WHERE rfid = $rfid1");
+$hasil = mysqli_fetch_array($pencocokan);
+$nama = $hasil['nama'];
+
 ?>
 
 <!DOCTYPE html>
@@ -22,17 +32,6 @@ if (!isset($_SESSION["login"])) {
 </head>
 
 <body>
-  <!-- Tombol Logout -->
-  <!-- <nav class="navbar navbar-light">
-    <div class="container-fluid">
-      <button type="button" class="btn btn-light btn-sm">
-        <a class="navbar-brand" href="logout.php">
-          <img src="images/sign-out.png" width="15%" class="d-inline-block align-text-middle">
-          Log out
-        </a></button>
-    </div>
-  </nav> -->
-
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
@@ -74,7 +73,7 @@ if (!isset($_SESSION["login"])) {
             <!-- <img src="images/battery.svg" alt="baterai" />
             <p class="card-text">50 %</p> -->
             <br>
-            <p class="card-text">In Use : Mario</p>
+            <p class="card-text">In Use : <?= $nama; ?></p>
           </div>
         </div>
       </div>
